@@ -111,3 +111,34 @@
     background: linear-gradient(#bf3813, #c45e38);
     margin: 2% auto;
 }
+
+.Tomato {
+    width: 65%;
+    height: 5%;
+    background: linear-gradient(#ee1f11, #f57d75);
+    margin: 2% auto;
+}
+
+.EggWhite {
+		width: 80%;
+		height: 6%; 
+		border-radius: 200px 200px 15px 5px;
+		background: ;
+    background: linear-gradient(#FFFFF3, #FFF5C3);
+		padding: 0px; 
+    margin: 2% auto;
+    margin-top: 6% auto;
+
+}
+
+.EggYolk {
+		width: 40%;
+		height: 20px; 
+		border-radius: 90px 90px 20px 20px;
+		background: #f9d010;
+    position: relative;
+		padding: 3px; 
+    bottom: 20%;
+    margin: 2% auto;
+}
+

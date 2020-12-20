@@ -5,9 +5,11 @@ import BuildControl from './BuildControl/BuildControl';
 
 const controls = [
     { label: 'Salad', type: 'salad' },
+    { label: 'Tomato', type: 'tomato' },
     { label: 'Bacon', type: 'bacon' },
     { label: 'Cheese', type: 'cheese' },
     { label: 'Meat', type: 'meat' },
+    { label: 'Egg', type: 'egg' },
 ]
 
 const BuildControls = (props) => (

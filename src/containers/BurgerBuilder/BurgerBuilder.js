@@ -13,7 +13,9 @@ const INGREDIENT_PRICES = {
     salad: 0.4,
     bacon: 0.8,
     cheese: 1.3,
-    meat: 1.7
+    meat: 1.7,
+		tomato: 0.5,
+		egg: 1.5,
 }
 
 class BurgerBuilder extends Component {
@@ -26,16 +28,15 @@ class BurgerBuilder extends Component {
         error: false
     }
 
-    componentDidMount() {
-        axios.get('/ingredients.json')
-            .then(response => {
-                this.setState({ ingredients: response.data })
-            })
-            .catch(error => {
-                this.setState({ error: true })
-            });
-
-    }
+		componentDidMount() { 
+				axios.get('/ingredients.json')
+						.then(response => { // add tomato and egg to the list of ingredient
+								this.setState({ ingredients: { "egg":0,  ...response.data, "tomato": 0} })
+						})
+						.catch(error => {
+								this.setState({ error: true })
+						});
+		}
 
     purchaseHandler = () => {
         this.setState({purchasing: true});
